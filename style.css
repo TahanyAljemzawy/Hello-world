@@ -6,8 +6,6 @@
   padding: 5px;
 }
 
-
-
 #subjectList {
 	background-color: #4CAF50;
 	width: 230px;
@@ -17,7 +15,7 @@
 .vertical-menu {
   width: 230px; 
   padding: 0px;
-  background-color: #CD5C5C;
+  
 }
 
 .vertical-menu a {
@@ -35,4 +33,22 @@
 .vertical-menu a.active {
   background-color: #3CB371; /* Add a green color to the "active/current" link */
   color: white;
+}
+
+#whiteSpace {
+  position: relative;
+  left:60px;
+  bottom: 80%;
+  overflow: auto;
+  width: 800px;
+  margin: outo;
+}
+
+#info {
+  padding: 50px;
+
+
+}
+p {
+  font-size: 15px;
 }

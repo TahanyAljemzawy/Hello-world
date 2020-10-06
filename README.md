@@ -11,5 +11,10 @@ Tahany todo list for this proj:
 (search how to make a list or drobdown minu)//done 
 2-use the bomo app and take arest 5 m & strech your self ..
 3-done from css but can improve it if there is more time
-4-work on the contant 
+4-work on the contant tonight how it will be taken from the js to the html (almost done)
+** proplem you need to solve : how can I give element I created using jquery id using jqury**
+** problem: the empty function need to be more creativ coz it delete evrything **
+***** Tahany You destroy the bringContent function fix it tommorow so it well create the html element 
+at each time its called ****
+
 
