@@ -39,8 +39,12 @@ $(document).ready(function(){
      if(subjObj.clicked === false) { 
     bringContent(subjObj)//create the contant of this subj}
     subjObj.clicked = true;
+    } else {
+      emptyTheContent();
+      bringContent(subjObj);
+
     }
-  }
+  }//the end of isCliked
 
   //subj0 click function call isClicked and give the function its own obj 
   $("#subj0").click(function() {
@@ -52,17 +56,28 @@ $(document).ready(function(){
     emptyTheContent();
   	isClicked(arrayOfContants[1])
   });//end os subj1
-    
-//the array of obj each opj is for one page
+
+  $("#subj2").click(function() {
+    emptyTheContent();
+    isClicked(arrayOfContants[2])
+  });
+  $("#subj3").click(function() {
+    emptyTheContent();
+    isClicked(arrayOfContants[3])
+  });
+  $("#subj4").click(function() {
+    emptyTheContent();
+    isClicked(arrayOfContants[4])
+  });
+    //the array of obj each opj is for one page
 var arrayOfContants = [{
-	title:"Introduction To HTML",
-  subjId : "subj0",
-	p1:"HTML is the standard markup language for Web pages With\n HTML you can create your own Website.HTML is easy to learn \n- You will enjoy it! \n HTML describes the structure of a Web page,\n HTML elements tell the browser how to display the content\n'HTML elements label pieces of content such as \n this is a heading this is a paragraph \n this is a link etc.",
+  title:"Introduction To HTML",
+  p1:"HTML is the standard markup language for Web pages With\n HTML you can create your own Website.HTML is easy to learn \n- You will enjoy it! \n HTML describes the structure of a Web page,\n HTML elements tell the browser how to display the content\n'HTML elements label pieces of content such as \n this is a heading this is a paragraph \n this is a link etc.",
   title2:"What is an HTML Element?",
   p2:"An HTML element is defined by a start tag, some content, and an end tag:\n <tagname>Content goes here...</tagname></XMP>\n The HTML element is everything from the start tag to the end tag:  <h1>My First Heading</h1> \n <p>My first paragraph.</p>",
   clicked:false, 
- },
-{
+  },
+  {
   title:"HTML Basic",
   clicked:false,
   p1:"In this chapter we will show some basic HTML examples. \n",
@@ -76,9 +91,8 @@ var arrayOfContants = [{
   p5:"HTML headings are defined with the <h1> to <h6> tags.\n<h1> defines the most important heading. <h6> defines the least important heading: ",
   title5:"How to View HTML Source?",
   p6:"Have you ever seen a Web page and wondered 'Hey! How did they do that?'",
-
-},
-{
+  },
+  {
   title:"HTML Elements",
   clicked:false,
   p1:"An HTML element is defined by a start tag, some content, and an end tag:\n<tagname>Content goes here...</tagname>\nThe HTML element is everything from the start tag to the end tag:\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>",
@@ -91,13 +105,41 @@ var arrayOfContants = [{
   title4:"HTML is Not Case Sensitive",
   p4:"HTML tags are not case sensitive: <P> means the same as <p>.\nThe HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands\n lowercase for stricter document types like XHTML.",
   note:"At 'Hello world' page always use lowercase letters to solve the questions plz !",
-},
-{
+  },
+  {
   title:"HTML Headings",
   p1:"HTML headings are titles or subtitles that you want to display on a webpage.",
-  
-},
- ]
+  p2:"<h1> defines the most important heading. <h6> defines the least important heading.",
+  note:"Note: Browsers automatically add some white space (a margin) before and after a heading.\nNote: Use HTML headings for headings only.\n Don't use headings to make text BIG or bold.",
+  title2:"Headings Are Important",
+  p3:"Search engines use the headings to index the structure and content of your web pages.",
+  p4:"Users often skim a page by its headings. It is important to use headings to show the document structure.",
+  p5:"<h1> headings should be used for main headings, followed by <h2> headings, then the less important <h3>, and so on.",
+  title3:"Bigger Headings",
+  p6:"Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute,\n using the CSS font-size property:",
+  title4:"Example",
+  example:'<h1 style="font-size:60px;">Heading 1</h1>',
+  },
+  {
+  title:"HTML Paragraphs",
+  p1:"The HTML <p> element defines a paragraph.",
+  p2:"A paragraph always starts on a new line, and browsers automatically add some white space\n(a margin) before and after a paragraph.",
+  example:"Example: \n<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>",
+  title2:"HTML Display",
+  p3:"You cannot be sure how HTML will be displayed.",
+  p4:"Large or small screens, and resized windows will create different results.",
+  p5:"With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.",
+  p6:"The browser will automatically remove any extra spaces and lines when the page is displayed:",
+  title3:"Example",
+  p7:"<p>This paragraph\ncontains a lot of lines\nin the source code,\nbut the browser\nignores it.\n</p>",
+  p8:"output ==> This paragraph contains a lot of lines in the source code, but the browser ignores it."
+  //title4:"Solution - The HTML <pre> Element",
+ // p9:"The HTML <pre> element defines preformatted text.\nThe text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:",
+  //p10:"<pre>\n  My Bonnie lies over the ocean.\n My Bonnie lies over the sea.\n My Bonnie lies over the ocean.\n Oh, bring back my Bonnie to me.\n </pre>",
+ // p11:"output ==> My Bonnie lies over the ocean.\n My Bonnie lies over the sea.\n My Bonnie lies over the ocean.\n Oh, bring back my Bonnie to me.",
+  }
+  ]
+
 
 
 

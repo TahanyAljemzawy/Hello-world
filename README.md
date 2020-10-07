@@ -14,8 +14,8 @@ Tahany todo list for this proj:
 	    ==> U have 2h for that
 	done//3-break 15m if i finish this target
 	done//4- after 25m break 5m (move yur mascels)
-	5-finish the contant info 3h or 4h and fix the position of the white space plz
-	6-nab for 30m or 45m
+	done//5-finish the contant info 3h or 4h and fix the position of the white space plz
+	
 	7- start the exersise section writing questions at least 3 questions for each subj
 
 

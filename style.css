@@ -1,8 +1,8 @@
 #mainHeader {
-  background-image: linear-gradient(to bottom right, #DB7093,#90EE90,#FFEFD5,#191970);/*PaleVioletRed,PapayaWhip,PowderBlue*/
+  background-image: linear-gradient(to right, #00CED1,#E0FFFF,#87CEFA,#D3D3D3 , yellow);/*PaleVioletRed,PapayaWhip,PowderBlue*/
   width : 100%;
   height: 50%;
-  margin: 0px;
+  margin: auto;
   padding: 5px;
 }
 
@@ -10,16 +10,21 @@
 	background-color: #4CAF50;
 	width: 230px;
 	height: 100%;
+  margin: auto;
 }
 
 .vertical-menu {
   width: 230px; 
   padding: 0px;
+  position: absolute;
+  left: 0;
+  top:100px;
+  margin: auto;
   
 }
 
 .vertical-menu a {
-  background-color:#98FB98; 
+  background-color:#00CED1; 
   color: black; /* Black text color */
   display: block; /* Make the links appear below each other */
   padding: 12px; /* Add some padding */
@@ -27,7 +32,8 @@
 }
 
 .vertical-menu a:hover {
-  background-color: #FFEFD5; 
+   background-image: linear-gradient(to right, #00CED1,#E0FFFF,#87CEFA,#D3D3D3 , yellow);/*PaleVioletRed,PapayaWhip,PowderBlue*/
+
 }
 
 .vertical-menu a.active {
@@ -36,10 +42,10 @@
 }
 
 #whiteSpace {
-  position: relative;
-  left:60px;
-  bottom: 80%;
-  overflow: auto;
+  position:relative;
+  left:20%;
+  top: 10%;
+  /*overflow: auto;*/
   width: 800px;
   margin: outo;
 }
@@ -47,9 +53,12 @@
 .info {
   padding: 50px;
   font-size: 15px;
+  margin: outo;
+  width: 80%
 }
 
 .subjHeader {
   font-size: 40px;
   color: #20B2AA;
+  margin: outo;
 }
