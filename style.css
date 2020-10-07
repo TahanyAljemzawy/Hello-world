@@ -44,11 +44,12 @@
   margin: outo;
 }
 
-#info {
+.info {
   padding: 50px;
-
-
-}
-p {
   font-size: 15px;
+}
+
+.subjHeader {
+  font-size: 40px;
+  color: #20B2AA;
 }
