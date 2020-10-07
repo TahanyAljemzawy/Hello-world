@@ -15,7 +15,7 @@ $(document).ready(function(){
   	//loop at the obj to set the paragrah to the page exapt title and color no need
    	for(var key in obj) {
 
-   		if(key === "title" || key === "clicked")
+   		if(key === "title" || key === "clicked" || key === "example")
    			continue;
    		else {
    			//incase we have secound title to give it the title decoration 
@@ -23,6 +23,12 @@ $(document).ready(function(){
    			{$(".info").append("<h2>"+obj[key]+"</h2>");//apend the h2 with sub tiltels
           $(".info h2").css("color","red")
         }
+      /*  if(key === "example"){
+          $(".info").append("<p class="example"> <XMP>"+obj[key]+"</XMP> </p>");
+          
+          $(".example").css("color","red");
+
+        }*/
       	else
    			$(".info").append("<p> <XMP>"+obj[key]+"</XMP> </p>");	
    		} 	
@@ -69,6 +75,19 @@ $(document).ready(function(){
     emptyTheContent();
     isClicked(arrayOfContants[4])
   });
+  $("#subj5").click(function() {
+    emptyTheContent();
+    isClicked(arrayOfContants[5])
+  });
+  $("#subj6").click(function() {
+    emptyTheContent();
+    isClicked(arrayOfContants[6])
+  });
+  $("#about").click(function() {
+    emptyTheContent();
+    isClicked(arrayOfContants[7])
+  });
+
     //the array of obj each opj is for one page
 var arrayOfContants = [{
   title:"Introduction To HTML",
@@ -83,7 +102,7 @@ var arrayOfContants = [{
   p1:"In this chapter we will show some basic HTML examples. \n",
   title2:"HTML Documents",
   p2:"All HTML documents must start with a document type declaration: <!DOCTYPE html>.\n The HTML document itself begins with <html> and ends with </html>.\n The visible part of the HTML document is between <body> and </body>.",
-  example1:"Example : \n <!DOCTYPE html>\n <html> \n <body> \n <h1>My First Heading</h1>\n <p>My first paragraph.</p> \n </body> \n </html>",
+  example:"Example : \n <!DOCTYPE html>\n <html> \n <body> \n <h1>My First Heading</h1>\n <p>My first paragraph.</p> \n </body> \n </html>",
 
   title3:"<XMP>The <!DOCTYPE> Declaration</XMP>",
   p4:"The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.\nIt must only appear once, at the top of the page (before any HTML tags).\nThe <!DOCTYPE> declaration is not case sensitive.\nThe <!DOCTYPE> declaration for HTML5 is: ",
@@ -91,6 +110,7 @@ var arrayOfContants = [{
   p5:"HTML headings are defined with the <h1> to <h6> tags.\n<h1> defines the most important heading. <h6> defines the least important heading: ",
   title5:"How to View HTML Source?",
   p6:"Have you ever seen a Web page and wondered 'Hey! How did they do that?'",
+  clicked:false,
   },
   {
   title:"HTML Elements",
@@ -99,7 +119,7 @@ var arrayOfContants = [{
   note:"Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements.\n Empty elements do not have an end tag!",
   title2:"Nested HTML Elements",
   p2:"HTML elements can be nested (this means that elements can contain other elements).\nAll HTML documents consist of nested HTML elements.\nThe following example contains four HTML elements (<html>, <body>, <h1> and <p>):\n",
-  example1:"<!DOCTYPE html>/n <html>\n <body>\n <h1>My First Heading</h1>\n <p>My first paragraph.</p>\n </body>\n</html>",
+  example:"<!DOCTYPE html>/n <html>\n <body>\n <h1>My First Heading</h1>\n <p>My first paragraph.</p>\n </body>\n</html>",
   title3:"Never Skip the End Tag",
   p3:"Some HTML elements will display correctly, even if you forget the end tag,\n However, never rely on this! Unexpected results and errors may occur if you forget the end tag!",
   title4:"HTML is Not Case Sensitive",
@@ -108,6 +128,7 @@ var arrayOfContants = [{
   },
   {
   title:"HTML Headings",
+  clicked:false,
   p1:"HTML headings are titles or subtitles that you want to display on a webpage.",
   p2:"<h1> defines the most important heading. <h6> defines the least important heading.",
   note:"Note: Browsers automatically add some white space (a margin) before and after a heading.\nNote: Use HTML headings for headings only.\n Don't use headings to make text BIG or bold.",
@@ -122,6 +143,7 @@ var arrayOfContants = [{
   },
   {
   title:"HTML Paragraphs",
+  clicked:false,
   p1:"The HTML <p> element defines a paragraph.",
   p2:"A paragraph always starts on a new line, and browsers automatically add some white space\n(a margin) before and after a paragraph.",
   example:"Example: \n<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>",
@@ -137,6 +159,28 @@ var arrayOfContants = [{
  // p9:"The HTML <pre> element defines preformatted text.\nThe text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:",
   //p10:"<pre>\n  My Bonnie lies over the ocean.\n My Bonnie lies over the sea.\n My Bonnie lies over the ocean.\n Oh, bring back my Bonnie to me.\n </pre>",
  // p11:"output ==> My Bonnie lies over the ocean.\n My Bonnie lies over the sea.\n My Bonnie lies over the ocean.\n Oh, bring back my Bonnie to me.",
+  },
+  {
+    title:"HTML Styles",
+    clicked:false,
+    p1:"The HTML style attribute is used to add styles to an element, such as color, font, size, and more.",
+    title2:"The HTML Style Attribute",
+    p2:"Setting the style of an HTML element, can be done with the style attribute.\nThe HTML style attribute has the following syntax:",
+    p3:'<tagname style="property:value;">\n The property is a CSS property. The value is a CSS value.',
+    title3:"Background Color",
+    p4:"The CSS background-color property defines the background color for an HTML element.",
+    p5:"Example:\nSet the background color for a page to powderblue:\n<body style='background-color:powderblue;'>\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n</body>",
+    title4:"Text Color",
+    p6:'The CSS color property defines the text color for an HTML element:\nExample:\n  <h1 style="color:blue;">This is a heading</h1>\n  <p style="color:red;">This is a paragraph.</p>',
+    title5:"Text Size",
+    p7:'The CSS font-size property defines the text size for an HTML element:\nExample\n  <h1 style="font-size:300%;">This is a heading</h1>\n  <p style="font-size:160%;">This is a paragraph.</p>',
+    title6:"Text Alignment",
+    p8:'The CSS text-align property defines the horizontal text alignment for an HTML element:\nExample:\n  <h1 style="text-align:center;">Centered Heading</h1>\n  <p style="text-align:center;">Centered paragraph.</p>',
+  }, {
+    title:"About Hello World ",
+    clicked:false,
+    p1:"It is a simple site for learning HTML .. It allows the user to solve a set of questions \n and see the result of what he wrote from the code"
+
   }
   ]
 
