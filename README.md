@@ -9,11 +9,11 @@ example using the sentince Hello World and from there I take the name ..
 Tahany todo list for this proj:
 <today gools>
 	done//1- fix the bring content function so it do all the styles and contenet to the page
-	new prop: when press ever you click the subj it will be created again ! T_T
+	solved//new prop: when press ever you click the subj it will be created again ! T_T
 	done//2- improve the empty content function
 	    ==> U have 2h for that
-	3-break 15m if i finish this target
-	4- after 25m break 5m (move yur mascels)
+	done//3-break 15m if i finish this target
+	done//4- after 25m break 5m (move yur mascels)
 	5-finish the contant info 3h or 4h and fix the position of the white space plz
 	6-nab for 30m or 45m
 	7- start the exersise section writing questions at least 3 questions for each subj
